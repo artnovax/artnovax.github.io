@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programs | ArtNovaX</title>
+
+    <link rel="icon" href="images/artnovax-favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/programs.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap"
+        rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body class="programs">
+    <header class="main-header">
+        <img src="images/artnovax-white-logo.png" alt="ArtNovaX Logo" class="brand-logo" />
+        <div class="brand-lockup">
+            <h1>ArtNovaX</h1>
+            <p>Mental Health Foundation</p>
+        </div>
+
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="about/">About</a></li>
+                <li><a href="programs/">Programs</a></li>
+                <li><a href="contact/">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="mobile-nav-toggle" onclick="toggleNav()">&#9776;</div>
+    </header>
+
+    <nav id="main-nav" class="mobile-nav">
+        <ul class="nav-links">
+            <li><a href="./">Home</a></li>
+            <li><a href="about/">About</a></li>
+            <li><a href="programs/">Programs</a></li>
+            <li><a href="contact/">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="programs-hero" data-aos="fade-right">
+        <h2>Programs & Activities</h2>
+        <p>
+            Through guided art therapy, collaborative workshops, webinars, and exhibitions, ArtNovaX brings healing and
+            innovation to life. Here’s a look at what we’ve been up to.
+        </p>
+    </section>
+
+    <section class="events">
+        <!-- Row 1 -->
+        <div class="event-row">
+            <img src="images/ihit-art-therapy.jpg" alt="Art Therapy at iHit" class="event-img"
+                data-aos="fade-right" />
+            <div class="event-card" data-aos="fade-left">
+                <h3>Art Therapy Event – iHit Kilimani</h3>
+                <p>Held on March 16, 2024, in collaboration with partners like Heyrafiki and Safe Space Arena.
+                    Activities
+                    included mental health talks, art therapy, and an art sale & exhibition attended by over 80
+                    participants.</p>
+            </div>
+        </div>
+
+        <!-- Row 2 (vertical stack left) -->
+        <div class="event-col">
+            <img src="images/art-contest.jpg" alt="Art Contest" class="event-img" data-aos="fade-right" />
+            <div class="event-card wide" data-aos="fade-left">
+                <h3>Art Therapy Contest – Mental Health Awareness Week</h3>
+                <p>From May 20–24, 2024, we hosted a themed art contest in partnership with UNSA FVM and FoA. Four
+                    winners were
+                    awarded for their powerful art submissions raising awareness around mental health.</p>
+            </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="event-row">
+            <img src="images/cd-painting.jpg" alt="Mini Art Therapy" class="event-img" data-aos="fade-right" />
+            <div class="event-card" data-aos="fade-left">
+                <h3>Mini Art Therapy – UoN Main Campus</h3>
+                <p>On October 9, 2024, our executive team engaged in mini art therapy by painting on recycled CDs. A
+                    fun, introspective session that celebrated creativity and wellness.</p>
+            </div>
+        </div>
+
+        <!-- Row 4 (mirrored fades) -->
+        <div class="event-row">
+            <img src="images/kabete-session.jpg" alt="Kabete Campus Session" class="event-img"
+                data-aos="fade-left" />
+            <div class="event-card" data-aos="fade-right">
+                <h3>Art Therapy Session – Kabete Campus</h3>
+                <p>On October 16, 2024, in partnership with UNSA FVM, ArtNovaX held a painting therapy session for 25
+                    university students. A safe space to decompress and reconnect through art.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- libs -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- shared + page scripts -->
+    <script defer src="assets/js/main.js"></script>
+    <script defer src="assets/js/pages/programs.js"></script>
+</body>
+
+</html>

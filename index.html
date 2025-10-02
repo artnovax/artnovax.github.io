@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ArtNovaX Mental Health Foundation</title>
+
+  <link rel="icon" href="images/artnovax-favicon-32.png" type="image/png" sizes="32x32" />
+
+  <!-- Shared + page styles -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/home.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap"
+    rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+
+<body class="home">
+  <header class="main-header">
+    <img src="images/artnovax-white-logo.png" alt="ArtNovaX Logo" class="brand-logo" />
+
+    <div class="brand-lockup">
+      <h1 id="animated-logo">ArtNovaX</h1>
+      <p>Mental Health Foundation</p>
+    </div>
+
+    <nav class="desktop-nav">
+      <ul>
+        <li><a href="./">Home</a></li>
+        <li><a href="about/">About</a></li>
+        <li><a href="programs/">Programs</a></li>
+        <li><a href="contact/">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="mobile-nav-toggle" onclick="toggleNav()">&#9776;</div>
+
+    <nav id="main-nav" class="mobile-nav">
+      <ul class="nav-links">
+        <li><a href="./">Home</a></li>
+        <li><a href="about/">About</a></li>
+        <li><a href="programs/">Programs</a></li>
+        <li><a href="contact/">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" data-aos="fade-up">
+    <canvas id="animated-bg"></canvas>
+    <div class="hero-content">
+      <h2>Where Art Heals, Tech Empowers, and Minds Transform.</h2>
+      <p>ArtNovaX is not just a mental health foundation — it's a movement. Born from the need to reimagine healing for
+        a digital, expressive generation, we blend art therapy, research, and technology into a bold model of
+        youth-centered wellness. From guided painting sessions to future-facing innovation hubs, we are building a
+        revolution where mental wellbeing is accessible, evidence-based, and culturally rooted in creativity. Join us as
+        we heal boldly, create freely, and transform together.</p>
+      <a href="/ArtNovaX-website/about/" class="btn-primary">Explore Our Vision</a>
+    </div>
+  </section>
+
+  <section id="about" class="pillars" data-aos="fade-up">
+    <div class="container">
+      <h3>Our Core Pillars</h3>
+      <div class="pillars-grid">
+        <div class="pillar-card light-on-red">
+          <h4>Art Therapy</h4>
+          <p>Art lives in all of us — it’s not decoration, it’s medicine. We’re making art therapy central, not
+            optional. Backed by research and culture, we’re proving that expression heals when it’s deeply guided and
+            scaled through tech.</p>
+        </div>
+        <div class="pillar-card light-on-red">
+          <h4>Mental Health Advocacy</h4>
+          <p>We don’t raise awareness — we raise the bar. We speak boldly, act radically, and give youth the mic to
+            shift how mental health is viewed, lived, and supported in Africa.</p>
+        </div>
+        <div class="pillar-card light-on-red">
+          <h4>Tech Innovation</h4>
+          <p>We build tools that heal. Our tech transforms art therapy into digital systems of care — accessible,
+            interactive, and made for a connected generation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="therapy" class="pillars" data-aos="fade-up">
+    <div class="container">
+      <h3>Why Art Therapy Works</h3>
+      <div class="pillars-grid">
+        <div class="pillar-card light-on-red">
+          <h4>Non-verbal Expression</h4>
+          <p>Not everyone can explain their pain. Art helps translate emotion into visuals — colors, shapes, textures —
+            that words can’t capture.</p>
+        </div>
+        <div class="pillar-card light-on-red">
+          <h4>Science Meets Possibility</h4>
+          <p>We don’t stop at the science — we build on it. Art therapy is still unfolding, and we’re shaping the future
+            with every brushstroke, backed by data and bold ideas.</p>
+        </div>
+        <div class="pillar-card light-on-red">
+          <h4>Creative Empowerment</h4>
+          <p>Art gives voice and power. It helps young people reclaim agency over their stories and futures, especially
+            those who’ve felt unseen or unheard.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="vision" class="pillars" data-aos="fade-up">
+    <div class="container">
+      <h3>The Vision Ahead</h3>
+      <div class="pillars-grid">
+        <div class="pillar-card light-on-red">
+          <h4>Research & Innovation Labs</h4>
+          <p>We envision establishing interdisciplinary labs for youth-focused mental health research, connecting animal
+            and human psychology.</p>
+        </div>
+        <div class="pillar-card light-on-red">
+          <h4>Fellowships & Platforms</h4>
+          <p>We aim to offer funded art therapy fellowships and create platforms to publish mental health narratives,
+            insights, and breakthroughs from Africa.</p>
+        </div>
+        <div class="pillar-card light-on-red">
+          <h4>A Continental Movement</h4>
+          <p>ArtNovaX is more than an initiative. It’s a revolution — of minds, tools, hearts, and healing. We’re here
+            to raise a generation that heals boldly and builds better.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="main-footer light-footer">
+    <p>&copy; 2025 ArtNovaX Mental Health Foundation. Built with purpose and powered by passion.</p>
+  </footer>
+
+  <!-- libs first -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- site scripts -->
+  <script defer src="assets/js/main.js"></script>
+  <script defer src="assets/js/pages/home.js"></script>
+</body>
+
+</html>

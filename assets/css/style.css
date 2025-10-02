@@ -1,0 +1,152 @@
+/* Base Styles */
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #0a0a0a;
+    color: #f0f0f0;
+    line-height: 1.6;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1rem;
+    max-width: 700px;
+    margin: 0 auto 1.5rem;
+}
+
+/* Header */
+.main-header {
+    background-color: #0d0d0d;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2rem;
+    color: #c91c1c;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #ff4fb2;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    padding: 8rem 2rem 6rem;
+    overflow: hidden;
+}
+
+.hero canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    background: linear-gradient(to right, #ff4fb2, #c91c1c);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn-primary {
+    background-color: #c91c1c;
+    color: #fff;
+    padding: 0.8rem 1.6rem;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #a71616;
+}
+
+/* Pillar Sections */
+.pillars {
+    padding: 4rem 2rem;
+}
+
+.pillars h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+}
+
+.pillar-card {
+    background-color: #1a1a1a;
+    border-left: 5px solid #c91c1c;
+    padding: 2rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.pillar-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Footer */
+.main-footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #0d0d0d;
+    color: #888;
+    font-size: 0.9rem;
+}

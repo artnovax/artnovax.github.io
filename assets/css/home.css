@@ -1,0 +1,230 @@
+/* Page background + default text color exactly as before */
+body.home {
+    background-color: #000000;
+    color: #f0f0f0;
+}
+
+/* Header wrapper (moved from inline style) */
+body.home header.main-header {
+    padding: 0.5rem 1.5rem;
+    max-height: 160px;
+    background: linear-gradient(to right, #000000, #3a0000);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo image styles + hover scale (replacing inline onmouseover/out) */
+body.home header.main-header .brand-logo {
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0 0 14px rgba(255, 50, 50, 0.7);
+    transition: transform 0.3s ease;
+}
+
+body.home header.main-header .brand-logo:hover {
+    transform: scale(1.1);
+}
+
+/* Center lockup */
+body.home header.main-header .brand-lockup {
+    text-align: center;
+    flex-grow: 1;
+}
+
+body.home header.main-header #animated-logo {
+    font-size: 4.2rem;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.5);
+    margin: 0;
+    opacity: 0;
+    /* initial state for GSAP */
+    transform: scale(0.8);
+    /* initial state for GSAP */
+}
+
+body.home header.main-header .brand-lockup p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+/* Desktop nav alignment */
+body.home header .desktop-nav {
+    margin-left: auto;
+    display: flex;
+    gap: 1.5rem;
+}
+
+body.home header .desktop-nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body.home header .desktop-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Mobile nav drawer + toggle button (moved from inline <style> blocks) */
+body.home .mobile-nav-toggle {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+    /* default hidden; shown in media query */
+}
+
+body.home nav.mobile-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background: #000000;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding: 2rem 1rem;
+    z-index: 999;
+    box-shadow: 4px 0 12px rgba(255, 255, 255, 0.1);
+}
+
+body.home nav.mobile-nav .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: 0;
+    list-style: none;
+}
+
+body.home nav.mobile-nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Keyframes preserved (even if not currently referenced) */
+@keyframes waveScale {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+
+    50% {
+        transform: scale(1.1) rotate(-1deg);
+    }
+
+    100% {
+        transform: scale(1.05) rotate(1deg);
+    }
+}
+
+@keyframes flickerText {
+    0% {
+        letter-spacing: 0px;
+    }
+
+    50% {
+        letter-spacing: 2px;
+    }
+
+    100% {
+        letter-spacing: 0px;
+    }
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Light cards used in pillars (replacing inline bg/text colors) */
+body.home .pillar-card.light-on-red {
+    background-color: #ffffff;
+    color: #c91c1c;
+}
+
+body.home .pillar-card.light-on-red h4 {
+    color: #c91c1c;
+}
+
+/* Footer color override to match inline styles */
+body.home .main-footer.light-footer {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Mobile adjustments preserved exactly */
+@media (max-width: 768px) {
+    body.home header.main-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-height: unset;
+        padding: 1rem;
+    }
+
+    body.home header.main-header .brand-logo {
+        height: 65px;
+        margin-bottom: 0.5rem;
+    }
+
+    body.home header.main-header div {
+        transform: none !important;
+    }
+
+    body.home header.main-header h1 {
+        font-size: 2.2rem !important;
+    }
+
+    body.home header.main-header p {
+        font-size: 0.85rem;
+    }
+
+    body.home header.main-header nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+        padding: 0;
+        margin-top: 0.75rem;
+    }
+
+    body.home header.main-header nav ul li a {
+        font-size: 0.95rem;
+    }
+
+    body.home .mobile-nav-toggle {
+        display: block;
+    }
+
+    body.home nav.mobile-nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #000000;
+        position: absolute;
+        right: 1rem;
+        top: 80px;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+
+    body.home nav.mobile-nav ul.show {
+        display: flex;
+    }
+}

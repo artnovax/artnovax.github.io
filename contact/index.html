@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <base href="/">
+    <title>Contact | ArtNovaX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="icon" href="images/artnovax-favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/contact.css" />
+
+    <!-- Icons + AOS (kept) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+
+<body class="contact">
+    <header class="main-header">
+        <!-- Keep absolute logo path as in original -->
+        <img src="images/artnovax-white-logo.png" alt="ArtNovaX Logo" class="brand-logo" />
+
+        <div class="brand-lockup">
+            <h1>ArtNovaX</h1>
+            <p>Mental Health Foundation</p>
+        </div>
+
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="about/">About</a></li>
+                <li><a href="programs/">Programs</a></li>
+                <li><a href="contact/">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="mobile-nav-toggle" onclick="toggleNav()">&#9776;</div>
+
+        <nav id="main-nav" class="mobile-nav">
+            <ul class="nav-links">
+                <li><a href="./">Home</a></li>
+                <li><a href="about/">About</a></li>
+                <li><a href="programs/">Programs</a></li>
+                <li><a href="contact/">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-hero" data-aos="fade-up">
+        <h2>Get in Touch</h2>
+        <p>We'd love to hear from you — whether it's a question, a partnership, or a brilliant idea.</p>
+
+        <div class="contact-card">
+            <form action="https://usebasin.com/f/f257a90198fe" method="POST">
+                <label for="name">Your Name</label><br />
+                <input type="text" id="name" name="name" required />
+
+                <label for="email">Your Email</label><br />
+                <input type="email" id="email" name="email" required />
+
+                <label for="message">Message</label><br />
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="btn-send">Send Message</button>
+            </form>
+        </div>
+
+        <div class="contact-meta">
+            <p><i class="fas fa-map-marker-alt"></i>Nairobi, Kenya</p>
+            <p><i class="fas fa-phone"></i>+254796454368</p>
+            <p><i class="fas fa-envelope"></i>artnovaxmentalhealthfoundation@gmail.com</p>
+
+            <div class="socials">
+                <a href="https://www.instagram.com/artnova.x?igsh=MWN3dWluNmVrd201dg%3D%3D&utm_source=qr"
+                    target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/artnovax-mental-health-foundation/" target="_blank"
+                    aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer light-footer">
+        &copy; 2025 ArtNovaX Mental Health Foundation
+    </footer>
+
+    <!-- libs -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- shared + page scripts -->
+    <script defer src="assets/js/main.js"></script>
+    <script defer src="assets/js/pages/contact.js"></script>
+</body>
+
+</html>

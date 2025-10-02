@@ -1,0 +1,199 @@
+/* Page background + base text exactly as before */
+body.contact {
+    background: linear-gradient(to bottom, #000000 60%, #1a1a1a);
+    color: #f0f0f0;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Header styling moved from inline */
+body.contact header.main-header {
+    padding: 1rem 2rem;
+    background: linear-gradient(to right, #000000, #3a0000);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+body.contact header .brand-logo {
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 50, 50, 0.7);
+}
+
+body.contact header .brand-lockup {
+    text-align: center;
+    flex-grow: 1;
+}
+
+body.contact header .brand-lockup h1 {
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    margin: 0;
+}
+
+body.contact header .brand-lockup p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #ffffff;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/* Desktop nav list */
+body.contact header .desktop-nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+body.contact header .desktop-nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body.contact header .desktop-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Mobile nav toggle + drawer (left side per original) */
+body.contact .mobile-nav-toggle {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1000;
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+body.contact nav.mobile-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background: #000000;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding: 2rem 1rem;
+    z-index: 999;
+    box-shadow: 4px 0 12px rgba(255, 255, 255, 0.1);
+}
+
+body.contact nav.mobile-nav .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: 0;
+    list-style: none;
+}
+
+body.contact nav.mobile-nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Responsive visibility rules (same behavior) */
+@media (max-width: 768px) {
+    .desktop-nav {
+        display: none !important;
+    }
+
+    .mobile-nav-toggle {
+        display: block !important;
+    }
+}
+
+/* Main section */
+.contact-hero {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.contact-hero h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-hero p {
+    font-size: 1.1rem;
+    color: #cccccc;
+    max-width: 700px;
+    margin: 1rem auto;
+}
+
+/* Form card */
+.contact-card {
+    margin: 3rem auto;
+    max-width: 600px;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    color: #000;
+    text-align: left;
+}
+
+.contact-card input[type="text"],
+.contact-card input[type="email"],
+.contact-card textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.contact-card .btn-send {
+    background-color: #c91c1c;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+/* Contact meta */
+.contact-meta {
+    max-width: 600px;
+    margin: 2rem auto;
+    color: #ffffff;
+    text-align: center;
+}
+
+.contact-meta p {
+    font-size: 1rem;
+}
+
+.contact-meta p i {
+    color: #c91c1c;
+    margin-right: 0.5rem;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.socials a {
+    color: #c91c1c;
+    font-size: 1.5rem;
+}
+
+/* Footer override to white background (as original inline) */
+body.contact .main-footer.light-footer {
+    background-color: #ffffff;
+    color: #000000;
+}
